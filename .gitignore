@@ -101,3 +101,5 @@ ENV/
 demo.py
 bin/
 include/
+GetUserProfile.py
+UserProfile.json
