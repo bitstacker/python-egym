@@ -1,7 +1,7 @@
 import egym
 
-api = egym.Api(email='marcel.poelstra@gmail.com',
-                      password='Spk.3Zvc')
+api = egym.Api(email='',
+                      password='')
 
 print(api.GetMaxForce())
 
