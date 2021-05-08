@@ -60,6 +60,7 @@ class Session(EgymModel):
     def __init__(self, **kwargs):
         self.param_defaults = {
             'template': None,
+            'sessionDate':None,
             'sessionIsoDate': None, 
             'exercises': None,
             'points': None,
@@ -74,7 +75,10 @@ class Session(EgymModel):
             self.exercises = ex
 
     def getTemplate(self):
-        return self.template
+        return self.getTemplate
+
+    def getIsoDate(self):
+        return self.sessionIsoDate
     
     def getIsoDate(self):
         return self.sessionIsoDate
