@@ -77,8 +77,8 @@ class Session(EgymModel):
     def getTemplate(self):
         return self.getTemplate
 
-    def getIsoDate(self):
-        return self.sessionIsoDate
+    def getDate(self):
+        return self.sessionDate
     
     def getIsoDate(self):
         return self.sessionIsoDate
