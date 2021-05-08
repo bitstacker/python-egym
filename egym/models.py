@@ -68,11 +68,11 @@ class Session(EgymModel):
         for (param, default) in self.param_defaults.items():
             setattr(self, param, kwargs.get(param, default))
 
-        if 'exercises' in kwargs:
+        """if 'exercises' in kwargs:
             ex = []
             for e in kwargs.get('exercises'):
                 ex.append(Exercise.NewFromJsonDict(e))
-            self.exercises = ex
+            self.exercises = ex"""
 
     def getTemplate(self):
         return self.getTemplate
